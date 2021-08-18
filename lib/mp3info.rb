@@ -158,6 +158,9 @@ class Mp3Info
 
   # the original filename unless used with a StringIO
   attr_reader(:filename)
+	
+  # the original file sizr
+  attr_reader(:io_size)
 
   # Test the presence of an id3v1 tag in file or StringIO +filename_or_io+
   def self.hastag1?(filename_or_io)
